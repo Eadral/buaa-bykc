@@ -1,0 +1,555 @@
+1604585592270	geckodriver	INFO	Listening on 127.0.0.1:7269
+1604585595206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileRAEdqm"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604585596864	Marionette	INFO	Listening on port 7277
+1604585597270	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://sso.buaa.edu.cn"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 119: TypeError: gRecipeManager is null
+1604585904505	Marionette	INFO	Stopped listening on port 7277
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604585907356	geckodriver	INFO	Listening on 127.0.0.1:7581
+1604585910436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileGWwkN8"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604585912078	Marionette	INFO	Listening on port 7590
+1604585912474	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604586220445	geckodriver	INFO	Listening on 127.0.0.1:7857
+1604586223528	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilec8S9dx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586225146	Marionette	INFO	Listening on port 7865
+1604586225575	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://sso.buaa.edu.cn"
+1604586301502	geckodriver	INFO	Listening on 127.0.0.1:8014
+1604586304573	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilex2xwrm"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586306206	Marionette	INFO	Listening on port 8023
+1604586306605	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://sso.buaa.edu.cn"
+1604586396542	geckodriver	INFO	Listening on 127.0.0.1:8239
+1604586399622	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileRZ7823"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586401340	Marionette	INFO	Listening on port 8247
+1604586401663	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604586417366	geckodriver	INFO	Listening on 127.0.0.1:8364
+1604586420459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile2kvxIC"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586422137	Marionette	INFO	Listening on port 8373
+1604586422515	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604586439101	geckodriver	INFO	Listening on 127.0.0.1:8489
+1604586442158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileWyB8BL"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586443843	Marionette	INFO	Listening on port 8497
+1604586444200	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://sso.buaa.edu.cn"
+1604586627297	geckodriver	INFO	Listening on 127.0.0.1:8731
+1604586630374	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile0GEE34"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586632031	Marionette	INFO	Listening on port 8752
+1604586632408	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604586735370	geckodriver	INFO	Listening on 127.0.0.1:8890
+1604586738441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilePrM6QU"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586740031	Marionette	INFO	Listening on port 8899
+1604586740480	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604586757863	geckodriver	INFO	Listening on 127.0.0.1:8979
+1604586760937	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile0yhC4U"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604586762645	Marionette	INFO	Listening on port 8988
+1604586762979	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:566:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child2/pagestyle26 (resource://devtools/server/actors/styles.js:566:5)", "resource://devtools/shared/protocol/Front.js", 341))
+console.error: "Error while calling actor 'pagestyle's method 'getUsedFontFaces'" "node is null"
+console.error: "getUsedFontFaces@resource://devtools/server/actors/styles.js:363:24\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Could not get the list of font families" (new Error("Protocol error (TypeError): node is null from: server0.conn0.child2/pagestyle26 (resource://devtools/server/actors/styles.js:363:24)", "resource://devtools/shared/protocol/Front.js", 341))
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "Error while calling actor 'layout's method 'getGrids'" "node is null"
+console.error: "getGrids@resource://devtools/server/actors/layout.js:502:26\ngetGrids@resource://devtools/server/actors/layout.js:507:43\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/index.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/index.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://sso.buaa.edu.cn/css/bootstrap.min.css, using system principal instead."
+console.error: "Error while calling actor 'layout's method 'getGrids'" "node is null"
+console.error: "getGrids@resource://devtools/server/actors/layout.js:502:26\ngetGrids@resource://devtools/server/actors/layout.js:507:43\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 139"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:139:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3060:30
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 360: TypeError: config.mobileCampus is undefined
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 360: TypeError: config.mobileCampus is undefined
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+JavaScript error: https://sso.buaa.edu.cn/cas/login-normal.html, line 306: TypeError: parent.doLogin is not a function
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://sso.buaa.edu.cn"
+1604587156130	geckodriver	INFO	Listening on 127.0.0.1:9689
+1604587159199	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileqobrm1"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604587160857	Marionette	INFO	Listening on port 9697
+1604587161269	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604587246683	geckodriver	INFO	Listening on 127.0.0.1:9977
+1604587249766	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile0RIW3x"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604587251463	Marionette	INFO	Listening on port 9985
+1604587251793	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604587663749	geckodriver	INFO	Listening on 127.0.0.1:10384
+1604587666812	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileSrsump"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604587668450	Marionette	INFO	Listening on port 10393
+1604587668867	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+1604587683794	geckodriver	INFO	Listening on 127.0.0.1:10516
+1604587686879	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilegKAeak"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604587688533	Marionette	INFO	Listening on port 10524
+1604587688925	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604587740765	geckodriver	INFO	Listening on 127.0.0.1:10654
+1604587743854	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofiler8TVDk"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604587745487	Marionette	INFO	Listening on port 10663
+1604587745916	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+1604588065157	geckodriver	INFO	Listening on 127.0.0.1:11011
+1604588068243	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilejOINDe"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588069889	Marionette	INFO	Listening on port 11019
+1604588070282	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604588081808	geckodriver	INFO	Listening on 127.0.0.1:11100
+1604588084859	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilen3bnTK"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588086508	Marionette	INFO	Listening on port 11109
+1604588086899	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+1604588257621	geckodriver	INFO	Listening on 127.0.0.1:11603
+1604588260703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileMClitv"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588262324	Marionette	INFO	Listening on port 11613
+1604588262765	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+JavaScript error: chrome://marionette/content/listener.js, line 1314: TypeError: can't access dead object
+1604588323464	geckodriver	INFO	Listening on 127.0.0.1:11726
+1604588326544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile38TmVT"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588328255	Marionette	INFO	Listening on port 11734
+1604588328597	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604588368524	geckodriver	INFO	Listening on 127.0.0.1:11831
+1604588371594	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilev0TqCf"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588373243	Marionette	INFO	Listening on port 11839
+1604588373635	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604588391442	Marionette	INFO	Stopped listening on port 11839
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604588394949	geckodriver	INFO	Listening on 127.0.0.1:11972
+1604588398004	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileKMz2Yt"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588399677	Marionette	INFO	Listening on port 11980
+1604588400061	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/client/inspector/markup/markup-context-menu.js, line 149: TypeError: this.selection is null
+1604588413716	Marionette	INFO	Stopped listening on port 11980
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1604588417476	geckodriver	INFO	Listening on 127.0.0.1:12183
+1604588420558	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileVBcZ3a"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588422215	Marionette	INFO	Listening on port 12191
+1604588422608	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604588494318	geckodriver	INFO	Listening on 127.0.0.1:12356
+1604588497395	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilecsla26"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588499037	Marionette	INFO	Listening on port 12364
+1604588499456	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604588636282	geckodriver	INFO	Listening on 127.0.0.1:13341
+1604588639360	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileyIhIAs"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588641005	Marionette	INFO	Listening on port 13350
+1604588641422	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604588748501	geckodriver	INFO	Listening on 127.0.0.1:14966
+1604588751582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofiledG9vNU"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604588753431	Marionette	INFO	Listening on port 14974
+1604588753622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/#/user/login, line 13: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1604590236038	geckodriver	INFO	Listening on 127.0.0.1:5370
+1604590241422	geckodriver	INFO	Listening on 127.0.0.1:5383
+1604590244508	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileNFS4jJ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590246209	Marionette	INFO	Listening on port 5392
+1604590246574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604590549838	geckodriver	INFO	Listening on 127.0.0.1:5718
+1604590552904	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilelePDbG"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590554589	Marionette	INFO	Listening on port 5727
+1604590554979	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/#/user/login, line 13: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+1604590777254	geckodriver	INFO	Listening on 127.0.0.1:6005
+1604590780337	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileVRdpIP"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590782005	Marionette	INFO	Listening on port 6013
+1604590782396	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604590819472	geckodriver	INFO	Listening on 127.0.0.1:6253
+1604590822554	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileAE6kI5"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590824194	Marionette	INFO	Listening on port 6261
+1604590824622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604590905912	geckodriver	INFO	Listening on 127.0.0.1:6394
+1604590908981	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileqYovF6"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590910680	Marionette	INFO	Listening on port 6403
+1604590911046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604590963508	geckodriver	INFO	Listening on 127.0.0.1:6623
+1604590966589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileoMpnGj"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604590968253	Marionette	INFO	Listening on port 6631
+1604590968637	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 697))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 351))
+1604591596367	geckodriver	INFO	Listening on 127.0.0.1:7205
+1604591599433	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile60vAkQ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591601124	Marionette	INFO	Listening on port 7213
+1604591601489	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604591636428	geckodriver	INFO	Listening on 127.0.0.1:7403
+1604591639504	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile2mxFFj"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591641125	Marionette	INFO	Listening on port 7411
+1604591641550	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592158690	Marionette	INFO	Stopped listening on port 7411
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Temp\\rust_mozprofileunrvgh"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591681956	Marionette	INFO	Listening on port 7562
+1604591682359	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23244, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1604592159539	Marionette	INFO	Stopped listening on port 7562
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591759344	Marionette	INFO	Listening on port 7742
+1604591759747	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592160187	Marionette	INFO	Stopped listening on port 7742
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Temp\\rust_mozprofile1hhDrV"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591795387	Marionette	INFO	Listening on port 7883
+1604591795711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604591813366	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591815216	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591817092	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591818941	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591820791	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591822638	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591824477	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591826323	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591828167	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591830010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604591831852	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604592160926	Marionette	INFO	Stopped listening on port 7883
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Temp\\rust_mozprofilet2TVz8"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591865364	Marionette	INFO	Listening on port 8174
+1604591865695	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592161715	Marionette	INFO	Stopped listening on port 8174
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Temp\\rust_mozprofileecq7cA"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604591953806	Marionette	INFO	Listening on port 8347
+1604591954233	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604592146004	geckodriver	INFO	Listening on 127.0.0.1:8877
+1604592149067	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile1IiwdZ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604592151079	Marionette	INFO	Listening on port 8886
+1604592151144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592325019	geckodriver	INFO	Listening on 127.0.0.1:9419
+1604592328096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofile5trshM"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604592329751	Marionette	INFO	Listening on port 9427
+1604592330167	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592364356	geckodriver	INFO	Listening on 127.0.0.1:9566
+1604592367435	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileSoSHWc"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604592369194	Marionette	INFO	Listening on port 9575
+1604592369483	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604592382393	geckodriver	INFO	Listening on 127.0.0.1:9708
+1604592385459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilesgaRpg"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604592387126	Marionette	INFO	Listening on port 9721
+1604592387508	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604592959497	geckodriver	INFO	Listening on 127.0.0.1:10160
+1604592962583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileQ96P3r"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604592964196	Marionette	INFO	Listening on port 10168
+1604592964641	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604593019490	geckodriver	INFO	Listening on 127.0.0.1:10311
+1604593022559	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileMPVIEv"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604593024365	Marionette	INFO	Listening on port 10319
+1604593024619	Marionette	WARN	TLS certificate errors will be ignored for this session
+1604593075321	geckodriver	INFO	Listening on 127.0.0.1:10538
+1604593078372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilepcNJcp"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604593080055	Marionette	INFO	Listening on port 10546
+1604593080424	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604593171878	geckodriver	INFO	Listening on 127.0.0.1:10754
+1604593174932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileRiGe4D"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604593176045	Marionette	INFO	Listening on port 10762
+1604593176471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:7397
+1604637918656	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofileBJ0u5t"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604637919809	Marionette	INFO	Listening on port 7411
+1604637920198	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.e5be670a.js, line 12: Error: Request aborted
+1604724398872	Marionette	INFO	Stopped listening on port 7411
+1604732985468	geckodriver	INFO	Listening on 127.0.0.1:8788
+1604732988544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yucon\\AppData\\Local\\Temp\\rust_mozprofilehjYyQs"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604732989708	Marionette	INFO	Listening on port 8799
+1604732990097	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://uc.buaa.edu.cn/static/js/chunk-vendors.c08d577e.js, line 12: Error: Request aborted
