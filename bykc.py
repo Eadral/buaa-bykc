@@ -122,6 +122,9 @@ def loop_bykc_list(driver, args, ding, acc_number):
 
     goto_bykc_list(driver)
     while True:
+        if acc_number >= args.number:
+            exit(0)
+
         print("count: {}".format(count))
         elements = driver.find_elements_by_xpath(
             '/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[8]')
@@ -156,9 +159,7 @@ def loop_bykc_list(driver, args, ding, acc_number):
                     yes_button.click()
                     if ding:
                         ding.send("选课成功 {}".format(name), at=[args.dingding_phone_number])
-                    acc_number += 1
-                    if acc_number >= args.number:
-                        exit(0)
+
                 except:
                     if ding:
                         ding.send("选课失败 {}".format(name), at=[args.dingding_phone_number])
@@ -198,6 +199,8 @@ if __name__ == "__main__":
 
             login_buaa_sso(driver, args)
             loop_bykc_list(driver, args, ding, acc_number)
+        except SystemExit:
+            break
         except:
             traceback.print_exc()
         finally:
