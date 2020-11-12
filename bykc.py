@@ -7,6 +7,7 @@ import base64
 import urllib.parse
 import requests
 import argparse
+import getpass
 
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -16,7 +17,6 @@ from selenium.webdriver.common.by import By
 
 parser = argparse.ArgumentParser(description="北航博雅小助手")
 parser.add_argument("username", help="统一认证用户名")
-parser.add_argument("password", help="统一认证密码")
 
 parser.add_argument("--driver_path", "-d", help="webdriver地址 默认: http://10.128.63.245:4444/wd/hub", default="http://10.128.63.245:4444/wd/hub")
 parser.add_argument("--interval", "-i", type=int, help="轮询间隔时间(s) 默认：1", default="1")
@@ -182,6 +182,7 @@ def loop_bykc_list(driver, args, ding, acc_number):
 
 if __name__ == "__main__":
     args = parser.parse_args()
+    args.password = getpass.getpass()
 
     acc_number = 0
 
