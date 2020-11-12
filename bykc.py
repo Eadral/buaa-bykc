@@ -18,7 +18,7 @@ parser.add_argument("username", help="统一认证用户名")
 parser.add_argument("password", help="统一认证密码")
 
 parser.add_argument("--driver_path", "-d", help="webdriver地址 默认: http://10.128.63.245:4444/wd/hub", default="http://10.128.63.245:4444/wd/hub")
-parser.add_argument("--interval", "-i", help="轮询间隔时间(ms)", default="1000")
+parser.add_argument("--interval", "-i", help="轮询间隔时间(s)", default="1")
 parser.add_argument("--target", "-t", nargs="+", help="目标课程")
 parser.add_argument("--type", help="目标课程类型 默认：讲座", default="讲座")
 
@@ -168,7 +168,7 @@ def loop_bykc_list(driver, args, ding):
             if ding:
                 ding.send("累计轮询次数：{}".format(count))
         count += 1
-        time.sleep(float(args.interval) / 1000)
+        time.sleep(float(args.interval))
 
 
 if __name__ == "__main__":
