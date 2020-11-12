@@ -50,32 +50,3 @@ count: 1
 ```bash
 python bykc.py -h
 ```
-```bash
-usage: bykc.py [-h] [--driver_path DRIVER_PATH] [--interval INTERVAL] [--target TARGET [TARGET ...]] [--type TYPE]
-               [--dingding_url DINGDING_URL] [--dingding_secret DINGDING_SECRET]
-               [--dingding_phone_number DINGDING_PHONE_NUMBER]
-               username password
-
-北航博雅小助手
-
-positional arguments:
-  username              统一认证用户名
-  password              统一认证密码
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --driver_path DRIVER_PATH, -d DRIVER_PATH
-                        webdriver地址 默认: http://10.128.63.245:4444/wd/hub
-  --interval INTERVAL, -i INTERVAL
-                        轮询间隔时间(ms)
-  --target TARGET [TARGET ...], -t TARGET [TARGET ...]
-                        目标课程
-  --type TYPE           目标课程类型 默认：讲座
-  --dingding_url DINGDING_URL
-                        dingding机器人url
-  --dingding_secret DINGDING_SECRET
-                        dingding机器人secret
-  --dingding_phone_number DINGDING_PHONE_NUMBER
-                        dingding机器人at手机号
-
-```
