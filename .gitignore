@@ -1,2 +1,4 @@
 .idea
 .env
+start.sh
+start.bat

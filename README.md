@@ -28,6 +28,8 @@ pip install -r requirements.txt
 ##### 简单使用
 ```bash
 python bykc.py 用户名 密码
+```
+```bash
 count: 0
 从巴黎到图卢兹：在原创中发展的欧洲航空航天企业 400/400 博雅课程-讲座-人文 True
 “博识杯”知识竞赛决赛 300/300 博雅课程-学校/院文化素质教育活动 False
@@ -40,6 +42,8 @@ count: 1
 ##### 帮助
 ```bash
 python bykc.py -h
+```
+```bash
 usage: bykc.py [-h] [--driver_path DRIVER_PATH] [--interval INTERVAL] [--target TARGET [TARGET ...]] [--type TYPE]
                [--dingding_url DINGDING_URL] [--dingding_secret DINGDING_SECRET]
                [--dingding_phone_number DINGDING_PHONE_NUMBER]

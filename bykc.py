@@ -132,7 +132,11 @@ def loop_bykc_list(driver, args, ding):
             type_text = types[i].text
             is_target = True
             if args.target or args.type:
-                is_target = name in args.target if args.target else False or args.type in type_text
+                is_target = False
+                if not is_target and args.target:
+                    is_target = name in args.target
+                if not is_target and args.type:
+                    is_target = args.type in type_text
 
             print(name, number_text, type_text, is_target)
             current_num, max_num = number_text.split("/")
