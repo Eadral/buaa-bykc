@@ -26,6 +26,9 @@ pip install -r requirements.txt
 ## 用法
 
 ##### 简单使用
+
+默认用法，自动抢所有**讲座**类型博雅，每秒轮询1次。
+
 ```bash
 python bykc.py 用户名 密码
 ```
