@@ -1,3 +1,4 @@
+import os
 import traceback
 import time
 import hmac
@@ -18,7 +19,8 @@ parser.add_argument("username", help="统一认证用户名")
 parser.add_argument("password", help="统一认证密码")
 
 parser.add_argument("--driver_path", "-d", help="webdriver地址 默认: http://10.128.63.245:4444/wd/hub", default="http://10.128.63.245:4444/wd/hub")
-parser.add_argument("--interval", "-i", help="轮询间隔时间(s)", default="1")
+parser.add_argument("--interval", "-i", type=int, help="轮询间隔时间(s) 默认：1", default="1")
+parser.add_argument("--number", "-n", type=int, help="抢课数量，达到后程序终止 默认：1", default="1")
 parser.add_argument("--target", "-t", nargs="+", help="目标课程")
 parser.add_argument("--type", help="目标课程类型 默认：讲座", default="讲座")
 
@@ -113,7 +115,7 @@ def goto_bykc_list(driver):
 
 targets = []
 
-def loop_bykc_list(driver, args, ding):
+def loop_bykc_list(driver, args, ding, acc_number):
     count = 0
     if ding:
         ding.send("开始查询")
@@ -154,6 +156,9 @@ def loop_bykc_list(driver, args, ding):
                     yes_button.click()
                     if ding:
                         ding.send("选课成功 {}".format(name), at=[args.dingding_phone_number])
+                    acc_number += 1
+                    if acc_number >= args.number:
+                        exit(0)
                 except:
                     if ding:
                         ding.send("选课失败 {}".format(name), at=[args.dingding_phone_number])
@@ -172,11 +177,13 @@ def loop_bykc_list(driver, args, ding):
             if ding:
                 ding.send("累计轮询次数：{}".format(count))
         count += 1
-        time.sleep(float(args.interval))
+        time.sleep(args.interval)
 
 
 if __name__ == "__main__":
     args = parser.parse_args()
+
+    acc_number = 0
 
     while True:
         if args.dingding_url is not None:
@@ -189,7 +196,7 @@ if __name__ == "__main__":
             driver = MeowDriver(args.driver_path, headless=True)
 
             login_buaa_sso(driver, args)
-            loop_bykc_list(driver, args, ding)
+            loop_bykc_list(driver, args, ding, acc_number)
         except:
             traceback.print_exc()
         finally:
