@@ -144,7 +144,7 @@ def loop_bykc_list(driver, args, ding):
 
             if current_num < max_num and is_target:
                 if ding:
-                    ding.send("发现目标可选课程 {}".format(name), at=[args.phone_number])
+                    ding.send("发现目标可选课程 {}".format(name), at=[args.dingding_phone_number])
                 try:
                     registers = driver.find_elements_by_xpath(
                         '/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[9]/a[2]')
@@ -153,10 +153,10 @@ def loop_bykc_list(driver, args, ding):
                     yes_button = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/button[2]')
                     yes_button.click()
                     if ding:
-                        ding.send("选课成功 {}".format(name), at=[args.phone_number])
+                        ding.send("选课成功 {}".format(name), at=[args.dingding_phone_number])
                 except:
                     if ding:
-                        ding.send("选课失败 {}".format(name), at=[args.phone_number])
+                        ding.send("选课失败 {}".format(name), at=[args.dingding_phone_number])
 
 
         refresh_button = driver.find_element_by_xpath(
@@ -178,18 +178,21 @@ def loop_bykc_list(driver, args, ding):
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    if args.dingding_url is not None:
-        ding = DingDing(args.dingding_url, args.dingding_secret, prefix="【博雅课程】")
-    else:
-        ding = None
+    while True:
+        if args.dingding_url is not None:
+            ding = DingDing(args.dingding_url, args.dingding_secret, prefix="【博雅课程】")
+        else:
+            ding = None
 
-    try:
-        driver = MeowDriver(args.driver_path, headless=True)
+        driver = None
+        try:
+            driver = MeowDriver(args.driver_path, headless=True)
 
-        login_buaa_sso(driver, args)
-        loop_bykc_list(driver, args, ding)
-    except:
-        traceback.print_exc()
-    finally:
-        ding.send("监视器意外退出", at=[args.phone_number])
-        driver.quit()
+            login_buaa_sso(driver, args)
+            loop_bykc_list(driver, args, ding)
+        except:
+            traceback.print_exc()
+        finally:
+            ding.send("监视器意外退出", at=[args.dingding_phone_number])
+            if driver:
+                driver.quit()
