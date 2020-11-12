@@ -1,12 +1,9 @@
-import os
-import time
 import traceback
 import time
 import hmac
 import hashlib
 import base64
 import urllib.parse
-import os
 import requests
 import argparse
 
