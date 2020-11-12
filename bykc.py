@@ -1,6 +1,14 @@
 import os
 import time
 import traceback
+import time
+import hmac
+import hashlib
+import base64
+import urllib.parse
+import os
+import requests
+import argparse
 
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -8,14 +16,52 @@ from selenium.webdriver.support.expected_conditions import visibility_of, presen
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 
-from dingding import DingDing
+parser = argparse.ArgumentParser(description="北航博雅小助手")
+parser.add_argument("username", help="统一认证用户名")
+parser.add_argument("password", help="统一认证密码")
 
+parser.add_argument("--driver_path", "-d", help="webdriver地址 默认: http://10.128.63.245:4444/wd/hub", default="http://10.128.63.245:4444/wd/hub")
+parser.add_argument("--interval", "-i", help="轮询间隔时间(ms)", default="1000")
+parser.add_argument("--target", "-t", nargs="+", help="目标课程")
+parser.add_argument("--type", help="目标课程类型 默认：讲座", default="讲座")
+
+parser.add_argument("--dingding_url", help="dingding机器人url")
+parser.add_argument("--dingding_secret", help="dingding机器人secret")
+parser.add_argument("--dingding_phone_number", help="dingding机器人at手机号")
+
+class DingDing:
+    def __init__(self, url, secret, prefix=""):
+        self.secret = secret
+        self.url = url
+        self.prefix=prefix
+
+    def send(self, mes, at=None):
+        timestamp = str(round(time.time() * 1000))
+        secret_enc = self.secret.encode('utf-8')
+        string_to_sign = '{}\n{}'.format(timestamp, self.secret)
+        string_to_sign_enc = string_to_sign.encode('utf-8')
+        hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
+        sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
+
+        res = requests.post(self.url + "&timestamp={}&sign={}".format(timestamp, sign), json={
+            "msgtype": "text",
+            "text": {
+                "content": self.prefix + mes
+            },
+            "at": {
+                "atMobiles": at if at is not None else [],
+            }
+        })
+
+        return res
 
 class MeowDriver:
-    def __init__(self, headless=True):
+    def __init__(self, driver_path, headless=True):
         options = Options()
         options.headless = headless
-        self.driver = webdriver.Firefox(executable_path=os.getenv("driver_path"), options=options)
+        self.driver = webdriver.Remote(
+            command_executor=driver_path,
+            options=options)
         self.driver.implicitly_wait(10)
         self.wait = WebDriverWait(self.driver, 10)
         self.switch_to = self.driver.switch_to
@@ -33,14 +79,14 @@ class MeowDriver:
             self.wait.until(visibility_of(element))
         return elements
 
-    def close(self):
-        self.driver.close()
+    def quit(self):
+        self.driver.quit()
 
     def get(self, url):
         self.driver.get(url)
 
 
-def login_buaa_sso(driver):
+def login_buaa_sso(driver, args):
     driver.get("https://sso.buaa.edu.cn/login")
 
     iframe = driver.find_element_by_xpath('//*[@id="loginIframe"]')
@@ -50,8 +96,8 @@ def login_buaa_sso(driver):
     password_input = driver.find_element_by_xpath('//*[@id="pwPassword"]')
     login_button = driver.find_element_by_xpath('/html/body/div[2]/div/div[3]/div[2]/div[1]/div[7]/input')
 
-    username_input.send_keys(os.getenv("username"))
-    password_input.send_keys(os.getenv("password"))
+    username_input.send_keys(args.username)
+    password_input.send_keys(args.password)
     login_button.click()
 
     driver.switch_to.default_content()
@@ -68,25 +114,49 @@ def goto_bykc_list(driver):
     class_select_button = driver.find_element_by_xpath('/html/body/main/div[1]/aside/div/ul/li[3]/div/ul/li[2]')
     class_select_button.click()
 
+targets = []
 
-def loop_bykc_list(driver, ding):
+def loop_bykc_list(driver, args, ding):
     count = 0
-    ding.send("开始查询")
+    if ding:
+        ding.send("开始查询")
 
     goto_bykc_list(driver)
     while True:
         print("count: {}".format(count))
         elements = driver.find_elements_by_xpath(
             '/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[8]')
+        names = driver.find_elements_by_xpath('/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[1]')
+        types = driver.find_elements_by_xpath('/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[2]')
 
-        for element in elements:
-            text = element.text
-            print(text)
-            current_num, max_num = text.split("/")
+        for i, element in enumerate(elements):
+            number_text = element.text
+            name = names[i].text
+            type_text = types[i].text
+            is_target = True
+            if args.target or args.type:
+                is_target = name in args.target if args.target else False or args.type in type_text
+
+            print(name, number_text, type_text, is_target)
+            current_num, max_num = number_text.split("/")
             current_num, max_num = int(current_num), int(max_num)
 
-            if current_num < max_num:
-                ding.send("发现可选课程！！！", at=[os.getenv("phone_number")])
+            if current_num < max_num and is_target:
+                if ding:
+                    ding.send("发现目标可选课程 {}".format(name), at=[args.phone_number])
+                try:
+                    registers = driver.find_elements_by_xpath(
+                        '/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[2]/table/tbody/tr[*]/td[9]/a[2]')
+
+                    registers[i].click()
+                    yes_button = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/button[2]')
+                    yes_button.click()
+                    if ding:
+                        ding.send("选课成功 {}".format(name), at=[args.phone_number])
+                except:
+                    if ding:
+                        ding.send("选课失败 {}".format(name), at=[args.phone_number])
+
 
         refresh_button = driver.find_element_by_xpath(
             '/html/body/main/div[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]/a')
@@ -98,25 +168,27 @@ def loop_bykc_list(driver, ding):
             continue
 
         if count % (60 * 24) == 0:
-            ding.send("累计轮询次数：{}".format(count))
+            if ding:
+                ding.send("累计轮询次数：{}".format(count))
         count += 1
-        time.sleep(60)
+        time.sleep(float(args.interval) / 1000)
 
 
 if __name__ == "__main__":
-    from dotenv import find_dotenv, load_dotenv
+    args = parser.parse_args()
 
-    load_dotenv(find_dotenv(), override=True)
-
-    ding = DingDing(os.getenv("dingding_url"), os.getenv("dingding_secret"), prefix="【博雅课程】")
+    if args.dingding_url is not None:
+        ding = DingDing(args.dingding_url, args.dingding_secret, prefix="【博雅课程】")
+    else:
+        ding = None
 
     try:
-        driver = MeowDriver(headless=True)
+        driver = MeowDriver(args.driver_path, headless=True)
 
-        login_buaa_sso(driver)
-        loop_bykc_list(driver, ding)
+        login_buaa_sso(driver, args)
+        loop_bykc_list(driver, args, ding)
     except:
         traceback.print_exc()
     finally:
-        ding.send("监视器意外退出", at=[os.getenv("phone_number")])
-        driver.close()
+        ding.send("监视器意外退出", at=[args.phone_number])
+        driver.quit()
