@@ -8,7 +8,10 @@ import urllib.parse
 import requests
 import argparse
 import getpass
+import smtplib
 
+from email.mime.text import MIMEText
+from email.header import Header
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.expected_conditions import visibility_of, presence_of_element_located
@@ -27,6 +30,33 @@ parser.add_argument("--type", help="目标课程类型 默认：讲座", default
 parser.add_argument("--dingding_url", help="dingding机器人url")
 parser.add_argument("--dingding_secret", help="dingding机器人secret")
 parser.add_argument("--dingding_phone_number", help="dingding机器人at手机号")
+
+parser.add_argument("--send_smtp_host", help="发送方邮箱smtp服务器地址，默认：smtp.buaa.edu.cn", default="smtp.buaa.edu.cn")
+parser.add_argument("--send_smtp_port", help="发送方邮箱smtp服务器地址端口，默认：22", default="22")
+parser.add_argument("--send_email_account", help="发送方邮箱账户名")
+# parser.add_argument("--send_email_password", help="发送方邮箱密码")
+parser.add_argument("--receive_email_account", help="收信方邮箱账户名， 默认：与发送方相同")
+
+class Email:
+    def __init__(self, rec_email, send_email, send_pwd, send_smtp_host, send_smtp_port):
+        self.rec_email = rec_email
+        self.send_email = send_email
+        self.send_pwd = send_pwd
+        self.send_smtp_host = send_smtp_host
+        self.send_smtp_port = send_smtp_port
+
+    def send(self, mes):
+        email_msg = MIMEText(mes)
+        email_msg['Subject'] = Header('成功选中博雅', 'utf-8')
+        email_msg['From'] = self.send_email
+        email_msg['To'] = self.rec_email
+
+        smtp = smtplib.SMTP()
+        smtp.connect(self.send_smtp_host, self.send_smtp_port)
+        smtp.login(self.send_email, self.send_pwd)
+        smtp.sendmail(email_msg['From'], email_msg['To'], email_msg.as_string())
+        print('发送邮件成功')
+        pass
 
 class DingDing:
     def __init__(self, url, secret, prefix=""):
@@ -115,7 +145,7 @@ def goto_bykc_list(driver):
 
 targets = []
 
-def loop_bykc_list(driver, args, ding, acc_number):
+def loop_bykc_list(driver, args, ding, email, acc_number):
     count = 0
     if ding:
         ding.send("开始查询")
@@ -159,7 +189,8 @@ def loop_bykc_list(driver, args, ding, acc_number):
                     yes_button.click()
                     if ding:
                         ding.send("选课成功 {}".format(name), at=[args.dingding_phone_number])
-
+                    elif email:
+                        email.send("选课成功 {}".format(name))
                 except:
                     if ding:
                         ding.send("选课失败 {}".format(name), at=[args.dingding_phone_number])
@@ -183,22 +214,39 @@ def loop_bykc_list(driver, args, ding, acc_number):
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    args.password = getpass.getpass()
+    args.password = getpass.getpass(prompt="博雅统一认证账号密码")
 
     acc_number = 0
 
     while True:
         if args.dingding_url is not None:
             ding = DingDing(args.dingding_url, args.dingding_secret, prefix="【博雅课程】")
+            email = None
+        elif args.send_email_account is not None:
+            args.send_email_password = getpass.getpass(prompt="发送邮箱的密码")
+            ding = None
+            if args.receive_email_account is not None:
+                email = Email(args.receive_email_account,
+                              args.send_email_account,
+                              args.send_email_password,
+                              args.send_smtp_host,
+                              args.send_smtp_port)
+            else:
+                email = Email(args.send_email_account,
+                              args.send_email_account,
+                              args.send_email_password,
+                              args.send_smtp_host,
+                              args.send_smtp_port)
         else:
             ding = None
+            email = None
 
         driver = None
         try:
             driver = MeowDriver(args.driver_path, headless=True)
 
             login_buaa_sso(driver, args)
-            loop_bykc_list(driver, args, ding, acc_number)
+            loop_bykc_list(driver, args, ding, email, acc_number)
         except SystemExit:
             break
         except:
